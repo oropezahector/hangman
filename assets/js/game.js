@@ -37,9 +37,6 @@ document.onkeyup = function(event){
 		    if (gameWord[i] === currentKey) {
 		        gameWord.splice(i, 1);
 		    }
-		    else if(gameWord.length === 0){
-				console.log('You WIN!');	
-			} 
 		}
 		console.log('updated array after correct '+gameWord);
 		console.log('length '+gameWord.length);

@@ -6,12 +6,21 @@
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
-  	<script type="text/javascript" src="game.js"></script>
+  	<script type="text/javascript" src="assets/js/game.js"></script>
+  	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+  	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-	<h1>Chicago Neighborhood Hangman</h1>
-	<div id="Help Message">Type a character to play the game</div>
-	<div id="current-word"></div>
-	<div id="current-guesses"></div>
+	<div class="content">
+		<div class="container">
+			<h1>Chicago Neighborhood Hangman</h1>
+			<div id="Help Message">Type a character to play the game</div>
+			<div id="current-word">_ _ _ _ _</div>
+			<div id="current-guesses"><p>Current guesses: a, c, f, g, i</p></div>
+			<div id="number-guesses"><p>6 guesses out of 10</p></div>
+			<a href="" id="resetGame">Start Over</a>
+		</div>
+	</div>
+	
 </body>
 </html>

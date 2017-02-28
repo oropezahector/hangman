@@ -1,0 +1,21 @@
+body{
+	background:url(../images/chicago-1.jpg);
+	background-size:cover;
+	color:#fff;
+	text-align: center;
+	font-size: 2em;
+}
+a{
+	color:white;
+}
+.content{
+	background: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+}
+.container{
+	max-width: 800px;
+	margin:auto;
+	padding-top:40px;
+	padding-bottom: 200px;
+}
