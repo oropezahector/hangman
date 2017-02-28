@@ -33,11 +33,13 @@ document.onkeyup = function(event){
 		hasWon();
 	}
 	else if (correctGuess) {
+		userGuesses.push(currentKey);
 		for (var i=gameWord.length-1; i>=0; i--) {
 		    if (gameWord[i] === currentKey) {
 		        gameWord.splice(i, 1);
 		    }
 		}
+		$('.guesses').html(userGuesses.toString());
 		console.log('updated array after correct '+gameWord);
 		console.log('length '+gameWord.length);
 		hasWon();
@@ -55,6 +57,7 @@ document.onkeyup = function(event){
 		console.log(currentKey);
 		console.log('Your new guess array:');
 		console.log(userGuesses);
+		$('.guesses').html(userGuesses.toString());
 		hasWon();
 	}
 }
